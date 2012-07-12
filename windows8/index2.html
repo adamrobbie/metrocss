@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="Metrojs.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="base.css" media="all" />
+	<script type="text/javascript" src="Metrojs.js"></script> 
+	</head>
+<body class="about dark">
+<div class="page">
+	<header id="header">
+		<h1><a href="/">Adam Robbie</a></h1>
+	</header>
+	<section id="main">
+<!-- Apply blue theme as default for all tiles -->
+<div id="tiles" class="blue">
+    <!-- Sliding Tile that shows 100% of the back tile every 3 seconds -->
+    <div class="live-tile" data-stops="100%" data-speed="750" data-delay="3000">
+        <span class="tile-title">slide tile (figure 2a)</span>
+        <div><img src="/images/sample/1tw.gif" alt="1" /></div>
+        <div><img src="/images/sample/2t.gif" alt="2" /></div>
+    </div>
+    <!-- Red Flip Tile that flips every 4 seconds -->
+    <div class="red live-tile" data-mode="flip" data-delay="4000">
+        <div>
+            <img src="/images/sample/3tw.gif" alt="3" />
+            <a class="tile-title">flip tile front (figure 2b)</a>
+        </div>
+        <div>
+            <img src="/images/sample/4tw.gif" alt="4" />
+            <a class="tile-title">flip tile back (figure 2b)</a>
+            </div>
+    </div>
+    <!-- Mango Flip List that triggers every 3 seconds -->
+    <div class="mango list-tile">
+        <span class="tile-title">flip list (figure 2c)</span>
+        <ul class="flip-list fourTiles" data-mode="flip-list" data-delay="3000">
+            <li>
+                <div><img src="/images/sample/1t.gif"  alt="1" /></div>
+                <div><img src="/images/sample/1tw.gif" alt="1" /></div>
+            </li>
+            <li>
+                <div><img src="/images/sample/2t.gif"  alt="2" /></div>
+                <div><img src="/images/sample/2tw.gif" alt="2" /></div>
+            </li>
+            <li>
+                <div><img src="/images/sample/3t.gif"  alt="3" /></div>
+                <div><img src="/images/sample/3tw.gif" alt="3" /></div>
+            </li>
+            <li data-direction="horizontal">
+                <div><img src="/images/sample/4t.gif"  alt="4" /></div>
+                <div><img src="/images/sample/4tw.gif" alt="4" /></div>
+            </li>
+        </ul>
+    </div>
+    <!-- Green Static Tile -->
+    <div class="green live-tile exclude">
+        <span class="tile-title">static tile (figure 2d)</span>
+        <p>Static tiles can take advantage of theming too!</p>
+    </div>
+</div>
+<!-- Activate live tiles -->
+<script type="text/javascript">
+    // apply regular slide universally unless .exclude class is applied 
+    // NOTE: The default options for each liveTile are being pulled from the 'data-' attributes
+    $(".live-tile, .flip-list").not(".exclude").liveTile();
+</script>
+	</section>
+<!-- Footer -->
+<footer class="appbar">
+       <nav>
+          <ul id="menu" class="appbar-buttons">
+              <li>
+                  <a href="#" class="home"><img src="/images/1pixel.gif" alt="home" /></a>
+                  <span class="charm-title">Home</span>
+              </li>
+              <li>
+                  <a href="#" class="about"><img src="/images/1pixel.gif" alt="about" /></a>
+                  <span class="charm-title">About</span>
+              </li>
+              <li>
+                  <a href="#" target="_blank" class="twitter"><img src="/images/1pixel.gif" alt="twitter" /></a>
+                  <span class="charm-title">Twitter</span>
+              </li>
+          </ul>
+      </nav>
+      <a class="etc">&bull;&bull;&bull;</a>
+      <ul class="theme-options clear">
+          <li>
+              <a class="accent blue" href="javascript:;"> </a>
+          </li>
+          <li>
+              <a class="accent brown" href="javascript:;"> </a>
+          </li>
+          <li>
+              <a class="accent green" href="javascript:;"> </a>
+          </li>
+          <li>
+              <a class="accent lime" href="javascript:;"> </a>
+          </li>
+          <li>
+              <a class="accent magenta" href="javascript:;"> </a>
+          </li>
+          <li>
+              <a class="accent mango" href="javascript:;"> </a>
+          </li>
+          <li>
+              <a class="accent pink" href="javascript:;"> </a>
+          </li>
+          <li>
+              <a class="accent purple" href="javascript:;"> </a>
+          </li>
+          <li>
+              <a class="accent red" href="javascript:;"> </a>
+          </li>
+          <li>
+              <a class="accent teal" href="javascript:;"> </a>
+          </li>
+      </ul>
+      <ul class="base-theme-options clear">
+          <li>
+              <a class="accent light" href="javascript:;"> </a>
+          </li>
+          <li>
+              <a class="accent dark" href="javascript:;"> </a>
+          </li>
+      </ul>
+  </footer>
+</div>
+  <script type="text/javascript">
+       $(document).ready(function(){
+           $(".appbar").applicationBar({ 
+                  preloadAltBaseTheme: true, 
+                  bindKeyboard: true,
+                  metroLightUrl: 'images/metroIcons_light.jpg',
+                  metroDarkUrl: 'images/metroIcons.jpg'
+           }); 
+       });
+  </script>	
+</body>
+</html>

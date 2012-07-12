@@ -1,0 +1,162 @@
+html, body { position:static; overflow:auto;}
+body {
+	font-size: 13px;
+	font-family: Segoe WP, Segoe UI, Verdana, Helvetica, Sans-Serif;
+	margin: 0;
+	padding: 0;
+}
+a:link {
+	color: #fff;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #fff;
+}
+.light a:link, .light a:visited { color:#000; }
+a:hover {
+	color: #1d60ff;
+	text-decoration: none;
+}
+
+a:active {
+	color: #12eb87;
+}
+.list-tile.skills .flip-list>li>div>a:link { cursor:default; }
+p, ul {
+	margin: 0px;
+	padding:0px;
+	line-height: 1.6em;
+}
+
+header,
+footer,
+nav,
+section {
+	display: block;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h2, h3, h4, h5, h6 
+{
+	font-weight:normal;
+	font-size: 1.5em;
+	color: #fff;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.light h2, .light h3, .light h4, .light h5, .light h6 { color:#000; }
+h2 
+{
+	padding-bottom:10px;
+	font-size:20px;
+	font-weight:normal;
+}
+#tiles>h2 { padding: 0 0 10px 10px; }
+#twitterFeed>h2 { padding-bottom:23px; }
+h3 {
+	font-size: 2.25em;
+	clear:both;
+	margin:10px 0px 0px;
+}
+
+h4 {
+	font-size: 1.8em;
+	margin:6px 0px 0px;
+}
+
+h5, h6 {
+	font-size: 1.5em;
+	margin:4px 0px 0px;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+.page 
+{   
+	width: 98%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+header, #header {
+	position: relative;
+	margin-bottom: 0px;
+	color: #fff;
+	padding: 60px 6% 0 6%;
+	*padding-top:70px;
+}
+
+header h1, #header h1 {    
+	position:absolute;
+	top:-60px;
+	margin: 0;
+	border: none;
+}
+ #header h1>a,#header h1>a:hover,#header h1>a:visited { text-decoration:none; color:#fff; font-size: 140px !important; font-weight: normal; }
+.light #header h1>a,.light #header h1>a:hover,.light #header h1>a:visited { color:#000; }
+.in-app header,.in-app h2 { display:none; }
+.wordstreamerhelp h3 { margin-top:-5px; }
+#main {
+	padding: 0px 5% 90px 6%;
+	background-color:transparent;
+	margin:25px 0 0px 0;
+	overflow:hidden;
+}
+.in-app #main { margin:-25px 0 0 0; }
+pre,code { font-size: 13px; margin: 0; padding: 0; max-width:980px; }
+.demo pre, .demo code { width:980px; }
+#tiles
+{
+	overflow: hidden;
+	position: relative;
+	max-width: 880px;
+	float:left;
+	margin:0px;
+	padding-bottom:100px;
+}
+.about #tiles { max-width:640px; }
+.tiles>.extra-info { font-size:12px; padding-left:12px; }
+.code-options { table-layout:fixed; width:95%; }
+.code-options .syntaxhighlighter { *min-height:30px; }
+.code-options .syntaxhighlighter * { font-size:11px !important; }
+.code-options .oName { font-size: 11px }
+.code-label { font-size: 13px; position:relative; top:5px; *top:0px; }
+.example-code-label { font-style:italic; font-size: 11px; position:relative; top:8px; *top:0px; }
+.footnote { font-style:italic; font-size: 11px; position:relative; top:-5px; *top:0px; }
+.smallNote { font-style:italic; font-size: 11px; }
+
+.download-options label { position:relative; top:7px; padding:0px 10px; font-size:18px; }
+.download-btn { color:#fff; float:left; padding:10px 10px 10px 20px; box-shadow: 1px 1px 5px #3c3c3c; border-radius:6px; display:block; margin:20px 0 20px 60px; min-height:72px; width:180px; text-decoration:none !important; font-size:18px; }
+.light .download-btn:link, .light .download-btn:hover, .download-btn:hover { color:#fff; }
+.download-btn .modules { display:block; font-size:12px; padding-top:4px; }
+#tiles .flip-list>li>div.flip-front { background-color:#fff !important; }
+.nineTiles { background-image:url('/content/images/skills/mcsd.jpg'); }
+#twitterFeed {
+	height: 480px;
+	float: left;
+	width: 280px;
+	font-size: 10px;
+	line-height:12px;
+	margin:5px 20px 0 10px;
+}
+#twitterFeed>div { overflow: auto; }
+#twitterFeed>div>div { margin:9px 0; position:relative; overflow:hidden; }
+#twitterFeed>div>div>a.pic{ clear:left; height:50px; width:48px; display:block; float:left; margin:0 5px 0 0; }
+#twitterFeed>div>div>a>img { border:none; vertical-align:middle; }
+#twitterFeed>div>div>a.pic>img { max-height:48px; max-width:48px; vertical-align:top; }
+
+#disqus_thread { width:980px; }
+#disqus_thread h3 { font-size:1.1em; }
+#dsq-pagination>.dsq-more-button { font-size:24px !important; }
+footer, 
+#footer 
+{
+   
+}
+.light footer,.light #footer 
+{  
+	
+}
