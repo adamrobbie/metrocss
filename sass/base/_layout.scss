@@ -1,0 +1,21 @@
+//Zen Grid setup
+$zen-column-count: 12;
+$zen-gutter-width: 20px !default;
+
+.container {
+	@include zen-grid-container;
+}
+.header {
+	@include zen-grid-item(12,1);
+}
+.content {
+	@include zen-clear();
+	@include zen-grid-item(8,1);
+}
+.aside1 {
+	@include zen-grid-item(4,9);
+}
+.footer {
+	@include zen-clear();
+	@include zen-grid-item(8,4);
+}

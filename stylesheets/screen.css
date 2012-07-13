@@ -66,3 +66,97 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p194@rails32/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 5, ../sass/base/_layout.scss */
+.container {
+  *position: relative;
+  *zoom: 1;
+}
+/* line 52, ../../../../.rvm/gems/ruby-1.9.3-p194@rails32/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+/* line 56, ../../../../.rvm/gems/ruby-1.9.3-p194@rails32/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+.container:after {
+  clear: both;
+}
+
+/* line 8, ../sass/base/_layout.scss */
+.header {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* line 11, ../sass/base/_layout.scss */
+.content {
+  clear: left;
+  float: left;
+  width: 66.667%;
+  margin-left: 0%;
+  margin-right: -66.667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* line 15, ../sass/base/_layout.scss */
+.aside1 {
+  float: left;
+  width: 33.333%;
+  margin-left: 66.667%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* line 18, ../sass/base/_layout.scss */
+.footer {
+  clear: left;
+  float: left;
+  width: 66.667%;
+  margin-left: 25%;
+  margin-right: -91.667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
