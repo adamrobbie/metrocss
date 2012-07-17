@@ -1,4 +1,10 @@
-
+html, body { position:static; overflow:auto;}
+body {
+	font-size: 13px;
+	font-family: Segoe WP, Segoe UI, Verdana, Helvetica, Sans-Serif;
+	margin: 0;
+	padding: 0;
+}
 a:link {
 	color: #fff;
 	text-decoration: underline;
@@ -23,6 +29,12 @@ p, ul {
 	line-height: 1.6em;
 }
 
+header,
+footer,
+nav,
+section {
+	display: block;
+}
 
 /* HEADINGS   
 ----------------------------------------------------------*/
@@ -41,7 +53,8 @@ h2
 	font-size:20px;
 	font-weight:normal;
 }
-
+#tiles>h2 { padding: 0 0 10px 10px; }
+#twitterFeed>h2 { padding-bottom:23px; }
 h3 {
 	font-size: 2.25em;
 	clear:both;
